@@ -1,3 +1,64 @@
 .Weather {
-  border: 1px solid #dadde1;
+  background: linear-gradient(
+    108.1deg,
+    rgb(77, 145, 210) 11.2%,
+    rgb(147, 192, 231) 88.9%
+  );
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.3) 0.5px 0.5px 2px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.Weather .form-control {
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  margin-bottom: 40px;
+}
+
+.Weather .btn {
+  color: rgb(255, 255, 255);
+  background: rgb(77, 145, 210) 11.2%;
+}
+
+.Weather h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 16.8px;
+  margin-bottom: 25px;
+}
+.Weather ul {
+  padding: 0px;
+}
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+  list-style: none;
+}
+
+.Weather .current-temp {
+  float: left;
+}
+
+.Weather img {
+  width: 64px;
+  padding-top: 5px;
+}
+.Weather .temperature {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+  margin-left: 10px;
+}
+.Weather .degree {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: -32px;
+  margin-left: 5px;
+  line-height: 1;
 }

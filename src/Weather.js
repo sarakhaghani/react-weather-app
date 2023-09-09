@@ -11,10 +11,15 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city"
               className="form-control"
+              autoFocus="on"
             />
           </div>
-          <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+          <div className="col-3 ">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -24,17 +29,22 @@ export default function Weather() {
         <li>Mostly Cloudy</li>
       </ul>
       <div className="row">
-        <div className="col-6">
+        <div className="col-6 ">
           <img
             src="https://assets.msn.com/weathermapdata/1/static/weather/Icons/taskbar_v10/Condition_Card/SunnyDayV3.svg"
             alt="Mostly Cloudy"
+            className="current-temp"
           />
-          6 °C
+
+          <div className="current-temp">
+            <span className="temperature">6</span>
+            <span className="degree">°C</span>
+          </div>
         </div>
         <div className="col-6">
           <ul>
             <li>Precipitation: 15%</li>
-            <li>Humidity:10%</li>
+            <li>Humidity: 10%</li>
             <li>Wind: 5 km/h</li>
           </ul>
         </div>
