@@ -13,8 +13,6 @@ export default function WeatherForecast(props) {
       let longitude = props.data.coordinates.lon;
       let latitude = props.data.coordinates.lat;
 
-      console.log("Coordinates in WeatherForecast:", latitude, longitude);
-
       let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
       axios.get(apiUrl).then((response) => {
@@ -37,6 +35,8 @@ export default function WeatherForecast(props) {
                   <WeatherForecastDay data={dailyForecast} />
                 </div>
               );
+            } else {
+              return null;
             }
           })}
         </div>

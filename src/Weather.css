@@ -33,6 +33,7 @@
 .Weather ul {
   padding: 0px;
 }
+
 .Weather li {
   font-size: 16px;
   font-weight: 100;
@@ -63,4 +64,7 @@
 }
 .weatherTemperature a {
   text-decoration: none;
+}
+.weatherinfo ul.humidity-wind {
+  margin-top: 10px;
 }
