@@ -43,10 +43,10 @@
 .Weather .current-temp {
   float: left;
 }
-
 .Weather img {
   width: 75px;
 }
+
 .Weather .temperature {
   font-size: 64px;
   font-weight: 400;
